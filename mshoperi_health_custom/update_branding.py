@@ -6,7 +6,9 @@ import frappe
 
 def update_branding():
     # Initialize Frappe if not already initialized (e.g. when run as module)
-    if not frappe.local.get("site"):
+    try:
+        frappe.local.site
+    except AttributeError:
         site = os.environ.get("SITE_NAME", "mshoperi-health.local")
         sites_path = "/home/frappe/frappe-bench/sites"
         os.chdir(sites_path)
