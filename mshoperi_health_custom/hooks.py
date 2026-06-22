@@ -1,5 +1,5 @@
 app_name = "mshoperi_health_custom"
-app_title = "Mshoperi Health Custom"
+app_title = "Mshoperi Health"
 app_publisher = "Mshoperi"
 app_description = "Custom UI and business logic for Mshoperi Health"
 app_email = "info@mshoperi.health"
@@ -11,15 +11,17 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "mshoperi_health_custom",
-# 		"logo": "/assets/mshoperi_health_custom/logo.png",
-# 		"title": "Mshoperi Health Custom",
-# 		"route": "/mshoperi_health_custom",
-# 		"has_permission": "mshoperi_health_custom.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "mshoperi_health_custom",
+		"logo": "/assets/mshoperi_health_custom/images/logo.png",
+		"title": "Mshoperi Health",
+		"route": "/app",
+	}
+]
+
+# App Logo
+app_logo = "/assets/mshoperi_health_custom/images/logo.png"
 
 # Includes in <head>
 # ------------------
